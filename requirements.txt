@@ -1,2 +1,1 @@
-# FinCalc uses only the Python standard library at runtime.
-# For development and tests: pip install pytest
+pytest>=8.0,<10

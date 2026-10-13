@@ -6,7 +6,7 @@
 
 FinCalc is a small Python financial calculator that runs in the terminal. It handles four common calculations: compound interest, loan EMI, investment CAGR, and present value. There's also a loan repayment summary, with the option to export a monthly payment schedule to CSV.
 
-I wanted to keep the program straightforward to use. You select an option from the menu, enter the amounts and rates, and see the result. It also checks for invalid inputs, such as negative loan amounts or text where a number is expected.
+The program is meant to be straightforward to use. You select an option from the menu, enter the amounts and rates, and see the result. It also checks for invalid inputs, such as negative loan amounts or text where a number is expected.
 
 ## Files
 
@@ -39,7 +39,7 @@ python project.py schedule --principal 1200 --annual-rate 0 --years 1 --output s
 
 ## How it works
 
-The calculations are separate functions so they can be tested without running the menu. I used Python's `Decimal` type for the amounts to avoid some of the rounding issues that come with ordinary floating-point numbers. Results are displayed to two decimal places. The CSV export is useful if someone wants to inspect the payment schedule in Excel.
+The calculations are separate functions so they can be tested without running the menu. It uses Python's `Decimal` type for the amounts to avoid some of the rounding issues that come with ordinary floating-point numbers. Results are displayed to two decimal places. The CSV export is useful if someone wants to inspect the payment schedule in Excel.
 
 The calculator makes a few simplifying assumptions: interest rates stay fixed, payments are monthly for loans, and it doesn't account for fees, taxes, or deposits and withdrawals during an investment period.
 

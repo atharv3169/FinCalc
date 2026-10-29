@@ -8,6 +8,12 @@ FinCalc is a small Python financial calculator that runs in the terminal. It han
 
 The program is meant to be straightforward to use. You select an option from the menu, enter the amounts and rates, and see the result. It also checks for invalid inputs, such as negative loan amounts or text where a number is expected.
 
+## Browser edition
+
+A standalone browser edition is available in [`web/`](web/README.md). It provides the same four core financial calculations, a loan amortization CSV download, and in-tab history export. The browser version is designed to be served as a reviewed static asset under FundLenz at `/fincalc`, while this repository remains separate. The original Python CLI continues to use `Decimal`; the JavaScript version uses floating-point numbers, with results rounded for display.
+
+Run its tests with `node --test web/core.test.mjs`. No Node package install or network API is required for the browser app.
+
 ## Files
 
 - **project.py** — The calculator itself: menu, formulas, input checks, command-line options, and CSV exports.

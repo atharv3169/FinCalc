@@ -1,7 +1,5 @@
 # FinCalc
 
-**Video Demo:** [YouTube link to be added]
-
 ## About
 
 FinCalc is a small Python financial calculator that runs in the terminal. It handles four common calculations: compound interest, loan EMI, investment CAGR, and present value. There's also a loan repayment summary, with the option to export a monthly payment schedule to CSV.
